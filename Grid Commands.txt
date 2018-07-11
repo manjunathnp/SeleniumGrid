@@ -1,0 +1,9 @@
+To Start HUB:
+1. Open the command prompt at SSS location, then execute .jar SSS 
+   > java -jar SSS.jar -role hub
+
+[ SSS will be up and running at localhost:4444 port ]
+
+To setup NODE:
+2. Open the command prompt at SSS location, execute following command specifying the path of chromedriver.exe
+   > java -Dwebdriver.chrome.driver="E:/Selenium/Drivers/ChromeDriver/chromedriver.exe" -jar selenium-server-standalone-3.13.0.jar -role node -hub http://192.168.0.2:4444/grid/register
